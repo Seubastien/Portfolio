@@ -1,4 +1,259 @@
-body{
-    background-color:red;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    margin: 0;
+
+}
+
+body {
+    font-family: Inter;
+    color: white;
+    background-color: black;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+}
+
+/*CSS PAGE D'ACCUEIL  *//*CSS PAGE D'ACCUEIL  *//*CSS PAGE D'ACCUEIL  *//*CSS PAGE D'ACCUEIL  *//*CSS PAGE D'ACCUEIL  *//*CSS PAGE D'ACCUEIL  */
+header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.265);
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+
+
+}
+
+#homePage {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100vh;
+
+}
+
+#homeImg {
+    position: absolute;
+    right: 20px;
+
+    width: 600px;
+    z-index: -5;
+}
+
+#barNav {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+#barNav li {
+    font-family: inter;
+    font-size: 1em;
+    letter-spacing: 0.8em;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 100%;
+    height: 100vh;
+}
+
+#homeTitle {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+    letter-spacing: 2em;
+    gap: 40px;
+
+}
+
+#homeTitle h1 {
+    font-size: 6em;
+    font-weight: 100;
+
+}
+
+#homeTitle h2 {
+    font-size: 5em;
+    font-weight: 400;
+}
+
+/* CSS A PROPOS *//* CSS A PROPOS *//* CSS A PROPOS *//* CSS A PROPOS *//* CSS A PROPOS *//* CSS A PROPOS *//* CSS A PROPOS *//* CSS A PROPOS */
+#about {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#aboutTiTe {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+
+
+#aboutText {
+
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5em;
+
+
+}
+
+#textDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 100px;
+}
+
+#aboutText p {
+    letter-spacing: 0.2em;
+    line-height: 1.5em;
+    width: 700px;
+
+}
+
+.technoImg {
+    width: 60px;
+}
+
+
+/* CSS de la partie PROJET *//* CSS de la partie PROJET *//* CSS de la partie PROJET *//* CSS de la partie PROJET *//* CSS de la partie PROJET */
+#works {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+#worksTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+#worksTiLi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+/* CSS Grosse BULLE *//* CSS Grosse BULLE *//* CSS Grosse BULLE *//* CSS Grosse BULLE *//* CSS Grosse BULLE *//* CSS Grosse BULLE */
+.buble {
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+    background: rgb(82, 232, 97);
+    background: linear-gradient(145deg, rgba(82, 232, 97, 1) 25%, rgba(5, 218, 247, 1) 94%);
+    filter: blur(5px);
+    position: absolute;
+    left: -200px;
+    top: 20px;
+    z-index: -5;
+
+}
+
+/* CSS GENERAL *//* CSS GENERAL *//* CSS GENERAL *//* CSS GENERAL */* CSS GENERAL *//* CSS GENERAL *//* CSS GENERAL *//* CSS GENERAL */
+.title {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+    width: 400px;
+
+}
+
+.title h2 {
+    font-size: 1.8em;
+    letter-spacing: 0.8em;
+}
+
+.separator {
+    display: flex;
+    align-self: center;
+    width: 200px;
+    border: solid white 1px;
+
+
+}
+
+.mirroir {
+    transform: rotate(180deg);
+}
+
+#formContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+/* CSS FORMULAIRE DE LOGIN */
+
+#formGlobal{
+    display: flex;
+    justify-content: center;
+    padding: 300px;
+
+}
+
+#formContainer {
+
+    display: flex;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 40px;
+    border: solid 0.5px rgba(69, 249, 75, 0.416);
+    background: rgba(255, 255, 255, 0.194);
+    padding: 50px;
+    width: min-content;
+}
+
+#formLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.loginInpute {
+    border-radius: 5px;
 }

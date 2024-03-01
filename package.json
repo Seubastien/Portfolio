@@ -9,6 +9,7 @@
   "author": "Sébastien Bourrelly",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "express": "^4.18.2",
     "mongoose": "^8.2.0",
     "twig": "^1.17.1"

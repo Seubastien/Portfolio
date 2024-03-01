@@ -1,14 +1,7 @@
 const mongoose = require('mongoose')
 
 const userSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: [true, "le nom est requis"]
-    },
-    firstName: {
-        type: String,
-        required: [true, "le prenom est requis"]
-    },
+   
     mail: {
         type: String,
         required: [true, "le mail est requis"]
@@ -20,3 +13,4 @@ const userSchema = new mongoose.Schema({
 })
 
 const userModel = mongoose.model('Users', userSchema)
+module.exports = userModel

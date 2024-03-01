@@ -8,15 +8,17 @@
 </head>
 <body>
 {% block header %}
-{% include "./partials/header.twig" %}
+{% include "./layouts/_header.twig" %}
 {% endblock %}
-
+<main>
 {% block main %}
 {% endblock %}
-
+</main>
 {% block footer %}
-{% include "./partials/footer.twig" %}
+{% include "./layouts/_footer.twig" %}
 {% endblock %}
+
+{% block script %}{% endblock %}
     
 </body>
 </html>

@@ -1,7 +1,7 @@
 exports.findPortfolio = (req, res) => {
     try {
 
-       res.render("./layouts/homepage.twig", {
+       res.render("./main/index.twig", {
 
 
         })

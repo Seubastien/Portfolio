@@ -1,0 +1,16 @@
+<section id="homePage">
+	<img id="homeImg" src="images/photo_moi_modif.png" alt="photo_moi">
+
+	<div id="particles-js"></div>
+	<div id="homeTitle">
+		<h1>Sébastien Bourrelly</h1>
+		<h2>Développeur Web</h2>
+	</div>
+	{% block script %}
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<script>
+			particlesJS.load('particles-js', 'particlesJs/config.json');
+		</script>
+
+	{% endblock %}
+</section>
