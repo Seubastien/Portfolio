@@ -1,0 +1,53 @@
+{% extends "adminBase.twig" %}
+{% block main %}
+	<section id="dashboardContainer">
+
+		<h1>Page Administrateur</h1>
+		<div></div>
+		<div>
+			<button type="submit" onclick="displayModal()">Ajouter un projet</button>
+
+		</div>
+
+	</section>
+	<div class="hidden editModal">
+		{% include "admin/_projectForm.twig" %}
+	</div>
+	
+	<div class="cardsContainer">
+		{% for project in projects %}
+			<div class="card">
+				<div>
+					<p>Nom du Projet</p>
+					<p>{{project.name}}</p>
+				</div>
+
+				<div>
+					<p>Url Projet</p>
+					<p>{{project.url}}</p>
+				</div>
+
+				<div>
+					<p>Github</p>
+					<p>{{project.urlGithub}}</p>
+
+				</div>
+
+				<div>
+					<p>Image</p>
+					<p>{{project.image}}</p>
+				</div>
+				<div class="btnContainer">
+				<a href="/deleteproject/{{project.id}}">Supprimer</a>
+				<a href="/updateproject/{{project.id}}">Modifier</a>
+
+				</div>
+				
+
+			</div>
+
+		{% endfor %}
+	</div>
+
+
+{% endblock %}
