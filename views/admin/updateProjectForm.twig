@@ -6,11 +6,11 @@
 
 <div class="projectContainer">
 	<h2>Modifier un projet</h2>
-	<form class="form" action="/updateproject/{{project.id}}" method="post">
+	<form class="form" action="/updateproject/{{project.id}}" method="post" enctype="multipart/form-data">
 		<input class="Inpute" id="name" type="text" name="name" value="{{project.name}}">
 		<input class="Inpute" id="url" type="text" name="url" value = "{{project.url}}">
 		<input class="Inpute" id="urlGit" type="text" name="urlGithub" value = "{{project.urlGithub}}">
-		<input class ="imgProject" type="text" name="image"  value = "{{project.image}}">
+		<input class ="imgProject" type="file" name="image"  value = "{{project.image}}">
 
 		<button type="submit">Modifier</button>
 	</form>

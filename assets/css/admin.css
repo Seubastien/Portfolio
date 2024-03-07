@@ -152,3 +152,12 @@ padding-left: 20px;
 .btnContainer a:hover {
     background-color: #45a049;
 }
+#img
+{
+    width:300px;
+    max-height: 245px;
+
+}
+#imgContainer{
+    text-align: center;
+}

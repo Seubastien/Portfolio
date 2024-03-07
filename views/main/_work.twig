@@ -5,15 +5,41 @@
 			<div class="separator"></div>
 			<h2 class="mirroir">Projets</h2>
 		</div>
-		<div id="link">
-			<h2>Liens</h2>
-			Liens github/Liens jouable
-		</div>
+		<div id="link"></div>
 	</div>
-	<article>
-		CAROUSEL
+	<article id="project">
+		{% for project in projects %}
+			{# // ici projects est la clé que l'on a défini dans portfolioController. #}
+			<ul>
+				<li>
+					<a href="{{project.url}}">
+						<div class="image">
+							<img src="/images/uploads/{{project.image}}" alt="projectImg">
+						</div>
+					</a>
+					<a id="lienGit" href="{{project.urlGithub}}">Lien github</a>
+					<div class="shadow"></div>
+				</li>
+			</ul>
+			{# <div id="animCOntainer">
+										<div id="projectContainer">
+											<a class="image" href="{{project.url}}">
+												<img id="imgProject" src="/images/uploads/{{project.image}}" alt="projectImg">
+											</a>
+											<div class="shadow"></div>
+											<a id="lienGit" href="{{project.urlGithub}}">Lien github</a>
+										</div>
+									</div> #}
+		{% endfor %}
 	</article>
-	<div class="buble">
-
-	</div>
+	<div class="buble"></div>
 </section>
+{# <div id="animCOntainer">
+				<div id="projectContainer">
+					<a class="image" href="{{project.url}}">
+						<img id="imgProject" src="/images/uploads/{{project.image}}" alt="projectImg">
+					</a>
+					<div class="shadow"></div>
+					<a id="lienGit" href="{{project.urlGithub}}">Lien github</a>
+				</div>
+			</div> #}

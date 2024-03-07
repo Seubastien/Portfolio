@@ -14,7 +14,9 @@ const projectSchema = new mongoose.Schema({
         required: [true, "un lien github est requis"]
     },
     image: {
-        type: String
+        type: String,
+        default: "icons8-css-50.png"
+      
     }
 
 

@@ -1,10 +1,10 @@
 <div class="projectContainer">
 	<h2>Ajouter un projet</h2>
-	<form class="form" action="/dashboard" method="post">
+	<form class="form" action="/dashboard" method="post" enctype="multipart/form-data">
 		<input class="Inpute" id="name" type="text" name="name" placeholder="Nom du projet">
 		<input class="Inpute" id="url" type="text" name="url" placeholder="Url">
 		<input class="Inpute" id="urlGit" type="text" name="urlGithub" placeholder="Url Github">
-		<input class ="imgProject" type="text" name="image" placeholder="Image">
+		<input class ="imgProject" type="file" name="image" placeholder="Image">
 
 		<button type="submit">Ajouter</button>
 	</form>
