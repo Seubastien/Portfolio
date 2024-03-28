@@ -28,7 +28,7 @@ exports.validLogin = async (req, res) => {
         res.render('admin/index.twig',
 
             {
-                error: error.errors
+                error: error
             })
     }
 }
